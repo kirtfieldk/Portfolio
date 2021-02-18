@@ -7,7 +7,7 @@
             </div>
             <div class="col-5 container ">
                 <div class="row">
-                    <div class="cursor col-sm" (click)="flipOpen()">About</div>
+                    <div [ngClass]="{'cursor col-sm': true, 'border-bottom': open}" (click)="flipOpen()" >About</div>
                     <div routerLink="/project" routerLinkActive="border-bottom" class="col-sm">Project</div>
                     <div routerLink="/blogs" routerLinkActive="border-bottom" class="col-sm">Blog</div>
                     <div routerLink="/contact" routerLinkActive="border-bottom" class="col-sm">Contact</div>
