@@ -1,0 +1,55 @@
+<nav class="navbar navbar-light zindex-popover bg-light sticky-top shadow">
+    <div class="container-fluid">
+        <div class="row w-100">
+            <div class="col-7">
+                <h3>Keith Kirtfield</h3>
+                <div class="mt-n2">Software Developer</div>
+            </div>
+            <div class="col-5 container ">
+                <div class="row">
+                    <div class="cursor col-sm" (click)="flipOpen()">About</div>
+                    <div routerLink="/project" routerLinkActive="border-bottom" class="col-sm">Project</div>
+                    <div routerLink="/blogs" routerLinkActive="border-bottom" class="col-sm">Blog</div>
+                    <div routerLink="/contact" routerLinkActive="border-bottom" class="col-sm">Contact</div>
+                </div>
+            </div>
+        </div>
+      <div *ngIf="open" class="position-relative row mt-5 w-100">
+        <div class="col-4">Image</div>
+        <div class="col-7 w-100">
+            <h4>About Me...</h4>
+            <div>
+                Graduate of <b>Virginia Commonwealth University</b> C/0 2020
+            </div>
+            <div>
+               B.S Mathematics & Computer Science 
+            </div>
+            <div class="mt-3">
+                <u>
+                    Mid Atlantic Permenente Medical Group 
+                </u>
+            </div>
+            <div>
+                Software Developer Intern <span class="ml-4">Full-time 01/2020 - 12/2020</span>
+            </div>
+            <div>Developed internal applications to support all departments at Mid-Atlantic</div>
+            <u>Skills:</u>
+            <div class="container-fluid">
+                <div *ngFor="let skill of skills; let i = index">
+                    <div class="col-sm">{{skill}}</div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <u>RecoveryTrek</u>
+                <div>Provide technical support to clients and internal comapny with respect to Salesforce and Java</div>
+                <u>Skills:</u>
+                <div class="container-fluid">
+                    <div class="sol-sm">Java</div>
+                    <div class="sol-sm">Salesforce</div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+  </nav>

@@ -1,0 +1,33 @@
+[
+    {
+        "title": "CI/CD — Docker-Compose, Elastic Beanstalk, and Github Actions",
+        "date": "Jan. 31, 2021",
+        "url":"https://kirtfieldk.medium.com/ci-cd-docker-compose-elastic-beanstalk-and-github-actions-9d5572975269",
+        "description": "Establish a CI/CD pipeline so that all git pushes to master branch deploys my application to AWS Elastic Beanstalk."
+    },{
+        "title": "Understanding Docker-Compose",
+        "date": "Jan. 27, 2021",
+        "url": "https://kirtfieldk.medium.com/understanding-docker-compose-71663472ecc4",
+        "description": "Explains how to leverage Docker Compose into multi-container applications"
+    },{
+        "title": "Guide: Deploying Container on AWS Elastic BeanStalk",
+        "date": "Jan. 23, 2021",
+        "url": "https://kirtfieldk.medium.com/guid-deploying-container-on-aws-elastic-beanstalk-f586f02c5de5",
+        "description": "Explains how to implement the EB CLI to deploy our containers to AWS Elastic Beanstalk."
+    },{
+        "title":"II. Inserting Client Containers Into Kubernetes",
+        "date": "Jan. 17, 2021",
+        "url": "https://kirtfieldk.medium.com/ii-inserting-client-containers-into-kubernetes-b71aeeec7a4c",
+        "description": "In the aready established K8S network, learn how to add more containers seamlessly!"
+    },{
+        "title": "I. Setting Up K8S Cluster For A Node Server",
+        "date":"Jan. 10, 2021",
+        "url":"https://kirtfieldk.medium.com/i-setting-up-k8s-cluster-for-a-node-server-bf65846d8327",
+        "description": "Set up a local K8S cluster and use a load balancer to distribute incomming traffic between the server deployments and client deployments."
+    },{
+        "title": "Guide to Deploying K8S on AWS",
+        "date": "Jan. 9, 2021",
+        "url": "https://kirtfieldk.medium.com/guid-to-deploying-k8s-on-aws-eb1f0c398648",
+        "description": "Introduction to the journey of deploying a K8S network onto AWS Elastic Beanstalk."
+    }
+]

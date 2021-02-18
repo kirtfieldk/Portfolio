@@ -1,0 +1,15 @@
+<div class="container pb-5">
+    <h2 class="mt-5 text-center">Blog Articles</h2>
+    <h5 class="text-center">I love writing about everything I learn about! Currently, I am in love with 
+        DevOps. This includes continuous integration, continuous deployment, and Docker containers.
+        Check out my <a href="https://kirtfieldk.medium.com/">Medium Account.</a> 
+    </h5>
+    <div *ngFor="let art of localArticles; let i = index">
+        <hr class="shadow">
+        <div class="mt-4" [id]="i">
+            <h2><a [href]="art.url">{{art.title}}</a></h2>
+            <div>{{art.description}}</div>
+        </div>
+    </div>
+
+</div>

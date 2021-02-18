@@ -1,0 +1,42 @@
+<div class="container mt-5 pb-5">
+    <h1 class="text-center">Personal Projects</h1>
+    <h5 class="text-center">
+        Below are all of my personal projects. These projects mainly focus in Javascript and Python. Check out my <a href="https://github.com/kirtfieldk">Github</a>
+    </h5>
+    <div *ngFor="let project of proj; let i = index">
+        <hr>
+        <div [id]="i">
+            <h2><a [href]="project.url">{{project.title}}</a></h2>
+            <div>{{project.description}}</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div *ngFor="let skill of project.skills; let k = index">
+                        <b class="col-sm">
+                            {{skill}}
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5  shadow w-100 pb-5 rounded">
+    <h1 class="text-center">Professional Projects</h1>
+    <h5 class="text-center">These are all the projects I have worked on and directed in my professional experiance</h5>
+    <div class="ml-2" *ngFor="let project of proj; let i = index">
+        <hr>
+        <div [id]="i">
+            <h2>{{project.title}}</h2>
+            <div>{{project.description}}</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div *ngFor="let skill of project.skills; let k = index">
+                        <b class="col-sm">
+                            {{skill}}
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
