@@ -10,6 +10,6 @@ RUN npm run build
 
 FROM nginx:1.18.0-alpine
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=0 /app/dist/bc-frontend /usr/share/nginx/html
+COPY --from=0 /app/dist/portfolio /usr/share/nginx/html
 EXPOSE 4200
 CMD ["nginx", "-g", "daemon off;"]
