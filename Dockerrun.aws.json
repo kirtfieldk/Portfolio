@@ -1,0 +1,18 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "name": "client",
+        "image": "keithkfield/portfolio-client",
+        "hostname": "client",
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 4200
+          }
+        ],
+        "memory": 300
+      }
+    ]
+}
