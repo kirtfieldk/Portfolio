@@ -18,7 +18,7 @@ jobs:
           password: ${{secrets.DOCKERHUB_TOKEN}}
           logout: true
       - name: Build Server image
-        run: docker build -t keithkfield/portfolio-client -f .   
+        run: docker build -t keithkfield/portfolio-client .   
       - name: Tag our Image
         run: docker tag keithkfield/portfolio-client keithkfield/portfolio-client:latest 
       - name: Push to dockerhub
